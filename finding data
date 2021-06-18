@@ -1,0 +1,95 @@
+One of the goals in SDG's is Quality Education.
+I have gone through the indicators listed and checked whether they can be used or not.
+For now, i have checked for % of null values in the datasets.
+Turns out there weren't many indicators with less percent of values
+
+These are the following indicators
+
+edu\expenditure_per_student_primary_percent_of_gdp_per_person.csv
+Null percentage : 54.05 %
+No of countries: 163
+edu\expenditure_per_student_secondary_percent_of_gdp_per_person.csv
+Null percentage : 57.26 %
+No of countries: 158
+edu\literacy_rate_adult_total_percent_of_people_ages_15_and_above.csv
+Null percentage : 79.28 %
+No of countries: 150
+edu\literacy_rate_youth_total_percent_of_people_ages_15_24.csv
+Null percentage : 79.59 %
+No of countries: 149
+edu\pre_school_enrollment.csv
+Null percentage : 30.97 %
+No of countries: 189
+edu\primary_completion_rate_total_percent_of_relevant_age_group.csv
+Null percentage : 33.22 %
+No of countries: 186
+edu\ratio_of_girls_to_boys_in_primary_and_secondary_education_perc.csv
+Null percentage : 30.72 %
+No of countries: 189
+edu\trained_teachers_in_primary_education.csv
+Null percentage : 52.91 %
+No of countries: 130
+edu\trained_teachers_in_secondary_education.csv
+Null percentage : 68.15 %
+No of countries: 115
+edu\children_out_of_school_primary.csv
+Null percentage : 33.83 %
+No of countries: 197
+edu\mean_years_in_school_men_15_to_24_years.csv
+Null percentage : 0.00 %
+No of countries: 188
+edu\primary_school_completion_percent_of_boys.csv
+Null percentage : 35.49 %
+No of countries: 195
+edu\primary_school_completion_percent_of_girls.csv
+Null percentage : 35.49 %
+No of countries: 195
+edu\children_out_of_school_primary.csv
+Null percentage : 33.83 %
+No of countries: 197
+
+Looking at the values, i narrowed them down to 5.
+I didn't want to use mean years in school here, since it is actually used in calculating HDI.
+But since there were no other indicator thats reliable so i had to use it.
+I just used the indicators for mean years in school for 15 to 24 years, since our goal is predicting hdi in some 30-40 years. 
+
+1. edu\children_out_of_school_primary.csv
+    Null percentage : 33.83 %
+    No of countries: 197
+2. edu\mean_years_in_school_men_15_to_24_years.csv
+    Null percentage : 0.00 %
+    No of countries: 188
+3. edu\pre_school_enrollment.csv
+    Null percentage : 30.97 %
+    No of countries: 189
+4. edu\primary_school_completion_percent_of_boys.csv
+    Null percentage : 35.49 %
+    No of countries: 195
+5. edu\primary_school_completion_percent_of_girls.csv
+    Null percentage : 35.49 %
+    No of countries: 195
+6. edu\ratio_of_girls_to_boys_in_primary_and_secondary_education_perc.csv
+    Null percentage : 30.72 %
+    No of countries: 189
+
+The other 5 were equally null , so we have to decide to whether keep them or not after calculating their correlation with HDI .
+It would be good if they are helpful otherwise we are just using the education index in HDI for this Goal.
+
+I have noticed that the data for all the indicators mentioned in SDG's are actually hard to find and actually most of them are empty.
+Even if we do find data thats has less percent of null values, as seen above, some of the countries are missing in these data.
+Because of that,  the percentage of null values will increase if we consider all the countries.
+So, its better to find data which has more no of countries in it and not just based on null values. 
+
+That's all for selecting the data. 
+
+
+
+
+
+
+
+
+
+
+
+
