@@ -1,0 +1,63 @@
+The Human Development Index (HDI) is a statistic composite index of World Development Indicators (WDI) which are used to rank countrie's human development.
+There are several goals and indicators.I chose the topic "Poverty" and downloaded the datasets regarding the topic-Poverty.
+In all these datasets there are Null values present in them.
+For that I have run a program in order to find out the percentage of Null values in each dataset.
+Results for that is:
+adequacy_of_social_insurance.csv
+Null : 83.50 %
+alternative_poverty_percent_below_nationally_defined_poverty.csv
+Null : 64.99 %
+at_least_basic_sanitation_overall_access_percent.csv
+Null : 1.52 %
+at_least_basic_water_source_overall_access_percent.csv
+Null : 1.23 %
+coverage_of_social_insurance.csv
+Null : 83.30 %
+drought_affected_annual_number.csv
+Null : 0.00 %
+earthquake_affected_annual_number.csv
+Null : 0.00 %
+epidemic_affected_annual_number.csv
+Null : 0.00 %
+flood_affected_annual_number.csv
+Null : 0.00 %
+government_health_spending_of_total_gov_spending_percent.csv
+Null : 1.10 %
+govt_expenditure_education.csv
+Null : 42.41 %
+income_share_of_poorest_20percent.csv
+Null : 64.72 %
+income_share_of_richest_20percent.csv
+Null : 64.94 %
+rural_poverty_percent_rural_people_below_national_rural.csv
+Null : 89.47 %
+social_rights_equality_index.csv
+Null : 0.44 %
+storm_affected_annual_number.csv
+Null : 0.00 %
+tsunami_affected_annual_number.csv
+Null : 88.19 %
+urban_poverty_percent_urban_people_below_national_urban.csv
+Null : 90.29 %
+ In all these the datasets with 0.00 % Null values are all deaths.So there is no use of considering those datsets.
+ And some datasets Null values percentage is much higher so these datasets are also of no use.
+ Finally..,there are only four datasets remaining with very less Null values percentage.They are-
+ at_least_basic_sanitation_overall_access_percent.csv
+ Null : 1.52 %
+ at_least_basic_water_source_overall_access_percent.csv
+ Null : 1.23 %
+ government_health_spending_of_total_gov_spending_percent.csv
+ Null : 1.10 %
+ social_rights_equality_index.csv
+ Null : 0.44 %
+ 
+ Further considering we can perform next steps.
+ 
+ Next steps may be-
+ 
+ Data Engineering: Scraping, merging, cleaning, and transforming data.
+ Exploratory Data Analysis: Analyzing variables for correlation and regression to build final data frame(s).
+ Prediction with Machine Learning: Using the final variables to build the models.
+ 
+ 
+ 
